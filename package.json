@@ -1,0 +1,15 @@
+{
+  "name": "order-notification-eda",
+  "version": "1.0.0",
+  "description": "Event-Driven Architecture Order Notification System using RabbitMQ and Node.js",
+  "main": "src/producer.js",
+  "scripts": {
+    "producer": "node src/producer.js",
+    "producer:duplicate": "node src/producer.js --duplicate",
+    "consumer:notification": "node src/notificationConsumer.js",
+    "consumer:analytics": "node src/analyticsConsumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
